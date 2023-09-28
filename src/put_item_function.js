@@ -9,7 +9,7 @@ exports.handler = async (event) => {
     let {id, price} = JSON.parse(event.body);
     
     const params = {
-      TableName : 'Items',
+      TableName : 'DIOItems',
       /* Item properties will depend on your application concerns */
       Item: {
          id: id,
